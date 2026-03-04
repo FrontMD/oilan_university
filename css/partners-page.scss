@@ -1,4 +1,12 @@
 .partners-page {
+    .program-wrapper {
+        padding: 25px 22px 111px 23px;
+
+        @media screen and (max-width: 768px) {
+            padding: 16px 12px 17px;
+        }
+    }
+
     .program__title {
         max-width: 750px;
     }
@@ -25,7 +33,21 @@
     }
 
     .bonuses-feedback {
-        background-color: #c9534d;
+        background-color: #335D98;
+
+
+        .bonuses-feedback__title {
+            max-width: 650px;
+        }
+
+        .bonuses-background {
+            top: 0;
+            bottom: 0;
+        }
+
+        .bonuses-background svg {
+            min-height: 100%;
+        }
     }
 
     .program-value small {
@@ -51,17 +73,22 @@
         font-size: 40px;
         line-height: 91%;
         letter-spacing: -0.03em;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         color: #fff;
+
+        @media (max-width: 1390px) {
+            font-size: 24px;
+        }
     }
 
-    .feedback-form .form-bottom p {
-        width: 100%;
-        margin-inline-end: 0;
-    }
-
-    .submit-btn:hover {
-        background-size: 20px 20px;
+    .program-feedback__subtitle {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 122%;
+        letter-spacing: -0.02em;
+        vertical-align: middle;
+        color: #fff;
+        margin-bottom: 17px;
     }
 
     .partners-conditions {
@@ -147,15 +174,70 @@
             gap: 20px;
         }
 
-        &__side {
-            flex: 0 0 auto;
+        &__right {
+            margin-left: auto;
+        }
+    }
+
+    .stages-training {
+        &__item--red {
+            position: relative;
+            background-color: #C9534D;
+        }
+
+        &__item--red .stages-training__bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: auto;
         }
     }
 
 
     .bonuses-btn {
+        width: 100%;
+        color: #335D98;
+
         @media (max-width:450px) {
             width: 100%;
+        }
+    }
+
+    .stages-btn {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding: 0 15px 0 12px;
+        width: 100%;
+        height: 49px;
+        background: transparent;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: -0.02em;
+        color: white;
+        z-index: 1;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .stages-btn:hover svg {
+        transform: scale(1.2);
+    }
+
+    .stages-btn svg {
+        transition: transform 0.2s ease;
+    }
+
+    .stages-top {
+        &__title {
+            max-width: 263px;
+        }
+    }
+
+    .stages-bottom {
+        &__text {
+            max-width: 315px;
         }
     }
 
