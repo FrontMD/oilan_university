@@ -7,8 +7,11 @@
         }
     }
 
-    .program__title {
+    .program__title,
+    h1.program__title {
         max-width: 750px;
+        margin: 0;
+        font-weight: 500;
     }
 
     .program-properties {

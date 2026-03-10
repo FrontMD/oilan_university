@@ -6,8 +6,11 @@
     padding: 16px 12px 17px;
   }
 }
-.partners-page .program__title {
+.partners-page .program__title,
+.partners-page h1.program__title {
   max-width: 750px;
+  margin: 0;
+  font-weight: 500;
 }
 .partners-page .program-properties {
   margin-top: 45px;
